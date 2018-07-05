@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 2018_07_03_122749) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+  ## gonna be gym_subscriptions
+  ## needs a gym_id and number of days (actual days)
 
   create_table "gyms", force: :cascade do |t|
     t.string "name"

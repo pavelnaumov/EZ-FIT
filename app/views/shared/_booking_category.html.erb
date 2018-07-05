@@ -3,3 +3,8 @@
 <%= link_to 'Package 1', :class=>"btn btn-primary" %>
 <%= link_to 'Package 2', :class=>"btn btn-primary" %>
 <%= link_to 'Package 3', :class=>"btn btn-primary" %>
+
+
+<% @categories.each do |category| %>
+<%= category.name %>
+<% end %>
