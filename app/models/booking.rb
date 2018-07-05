@@ -3,5 +3,5 @@ class Booking < ApplicationRecord
   belongs_to :user
   belongs_to :gym
 
-  has_many :categories
+  has_many :categories, dependent: :destroy
 end

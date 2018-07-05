@@ -76,9 +76,9 @@ Gym.create!(
   )
 
   Gym.all.each do |gym|
-    Category.create(name: "1-Day Subscription", price: 15, gym: gym, number_of_days: 1)
-    Category.create(name: "10-Day Subscription", price: 25, gym: gym, number_of_days: 10)
-    Category.create(name: "30-Day Subscription", price: 115, gym: gym, number_of_days: 30)
+    Category.create(name: "1-Time Pass", price: 15, gym: gym, number_of_visits: "1 Visit")
+    Category.create(name: "10-Times Pass", price: 25, gym: gym, number_of_visits: "10 Visits")
+    Category.create(name: "Unlimited One Month Pass", price: 115, gym: gym, number_of_visits: "Unlimited Visits")
   end
 
 puts "Done generating seeds!"

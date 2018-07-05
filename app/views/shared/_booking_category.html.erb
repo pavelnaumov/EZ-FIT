@@ -2,6 +2,7 @@
 
 
 <% @categories.each do |category| %>
-
-  <%= link_to category.name, @gym, class: "btn btn-success" %>
+<p><%= category.price %>€</p>  
+<%= category.number_of_visits %>
+  <%= link_to category.name, new_gym_booking_path(@gym), class: "btn btn-success" %>
 <% end %>
