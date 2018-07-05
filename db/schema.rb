@@ -32,8 +32,11 @@ ActiveRecord::Schema.define(version: 2018_07_03_122749) do
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.integer "price"
+    t.bigint "gym_id"
+    t.integer "number_of_days"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["gym_id"], name: "index_categories_on_gym_id"
   end
 
   create_table "gyms", force: :cascade do |t|
@@ -66,4 +69,5 @@ ActiveRecord::Schema.define(version: 2018_07_03_122749) do
   add_foreign_key "bookings", "categories"
   add_foreign_key "bookings", "gyms"
   add_foreign_key "bookings", "users"
+  add_foreign_key "categories", "gyms"
 end
