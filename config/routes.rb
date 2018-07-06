@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'gyms#index'
 
   resources :gyms, only: [:index, :show] do
-    resources :bookings, except: :index
+    resources :bookings, only: :show
   end
-    resources :bookings, only: :index
+    resources :bookings, only: [:index, :new]
   end
