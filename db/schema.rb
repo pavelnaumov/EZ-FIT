@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_03_122749) do
+ActiveRecord::Schema.define(version: 2018_07_05_172543) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,9 +33,9 @@ ActiveRecord::Schema.define(version: 2018_07_03_122749) do
     t.string "name"
     t.integer "price"
     t.bigint "gym_id"
-    t.integer "number_of_days"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "number_of_visits"
     t.index ["gym_id"], name: "index_categories_on_gym_id"
   end
 
