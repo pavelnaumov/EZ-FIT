@@ -1,3 +1,4 @@
+
 class BookingsController < ApplicationController
 
   def index
@@ -6,14 +7,11 @@ class BookingsController < ApplicationController
 
   def new
     @booking = Booking.new
-    @gym = Gym.find(params[:id])
+    @gym = Gym.find(params[:gym_id])
+    @category = Category.find(params[:category_id])
   end
 
+  def create
 
-    def show
-      @booking = Booking.new
-      @gym = Gym.find(params[:gym_id])
-      @category = @gym.categories
-  end
 end
 
