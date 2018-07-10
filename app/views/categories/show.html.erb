@@ -1,4 +1,5 @@
 <h1>hi</h1>
 <%= @gym.name %>
 <%= @category.name %>
-<%= @category.price %> €
+
+<p>Amount: <%= humanized_money_with_symbol(@category.price) %></p>
