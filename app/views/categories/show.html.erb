@@ -1,4 +1,12 @@
 <h1>hi</h1>
 <%= @gym.name %>
 <%= @category.name %>
-<%= @category.price %> €
+
+<p>Amount: <%= humanized_money_with_symbol(@category.price) %></p>
+
+<%= form_tag orders_path do %>
+  <%= hidden_field_tag 'category_id', @category.id %>
+  <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+<% end %>
+
+

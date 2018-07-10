@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_05_172543) do
+ActiveRecord::Schema.define(version: 2018_07_10_095719) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,11 +31,11 @@ ActiveRecord::Schema.define(version: 2018_07_05_172543) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
-    t.integer "price"
     t.bigint "gym_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "number_of_visits"
+    t.integer "price_cents", default: 0, null: false
     t.index ["gym_id"], name: "index_categories_on_gym_id"
   end
 
@@ -47,6 +47,17 @@ ActiveRecord::Schema.define(version: 2018_07_05_172543) do
     t.integer "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.string "state"
+    t.string "category_name"
+    t.integer "amount_cents", default: 0, null: false
+    t.jsonb "payment"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -70,4 +81,5 @@ ActiveRecord::Schema.define(version: 2018_07_05_172543) do
   add_foreign_key "bookings", "gyms"
   add_foreign_key "bookings", "users"
   add_foreign_key "categories", "gyms"
+  add_foreign_key "orders", "users"
 end

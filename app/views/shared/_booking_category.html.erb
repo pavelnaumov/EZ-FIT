@@ -2,7 +2,7 @@
 
 
 <% @categories.each do |category| %>
-<p><%= category.price %>€</p>  
+<p><%= humanized_money_with_symbol(category.price) %></p> 
 <%= category.number_of_visits %>
   <%= link_to category.name, gym_category_path(@gym, category.id), class: "btn btn-success" %>
 <% end %>
