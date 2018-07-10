@@ -15,4 +15,8 @@ class OrdersController < ApplicationController
   def show
     @order = current_user.orders.where(state: 'paid').find(params[:id])
   end
+
+  def cart
+    @orders_cart = current_user.orders.where(state: 'pending')
+  end
 end
