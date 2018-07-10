@@ -1,5 +1,10 @@
 class OrdersController < ApplicationController
 
+
+  def index
+    @orders = Order.all.where(state: 'paid')
+  end
+
   def create
     category = Category.find(params[:category_id])
     order  = Order.create!(category_name: category.name, amount: category.price, state: 'pending', user: current_user)
