@@ -11,7 +11,6 @@
 
     <!-- Links when logged in -->
     <%= link_to "My Passes", "/passes", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "My Cart", "#", class: "navbar-wagon-item navbar-wagon-link" %>
     <!-- Avatar with dropdown menu -->
     <div class="navbar-wagon-item">
       <div class="dropdown">
@@ -37,14 +36,11 @@
     </div>
 
     <div class="navbar-wagon-cart">
-      <% if current_user.orders.empty?  %>
-      <% elsif current_user.orders.last.state == "pending" %>
-      <%= link_to new_order_payment_path(current_user.orders.last) do %>
-      <i class="fas fa-shopping-bag"></i>
+      <%= link_to '/cart' do %>
+      <i class="fas fa-shopping-cart"></i>
       <div class="number-of-articles">
         <%= current_user.orders.where(state: 'pending').length %>
       </div>
-      <% end %>
       <% end %>
     </div>
     <% else %>
