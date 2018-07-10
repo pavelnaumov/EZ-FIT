@@ -18,5 +18,11 @@ class OrdersController < ApplicationController
 
   def cart
     @orders_cart = current_user.orders.where(state: 'pending')
+    @price_total = 0
+    for i in 0 .. @orders_cart.amount.length - 1
+      @price_total += @orders_cart[i].amount_cents
+    end
   end
 end
+
+
