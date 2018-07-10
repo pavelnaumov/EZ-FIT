@@ -1,3 +1,8 @@
 <% @orders_cart.each do |order| %>
+<ul>
 <%= order.state %>
+<li><%= order.category_name %></li>
+  <li>  <%= humanized_money_with_symbol(order.amount) %></li>
+  <li>  <%= order.number_of_visits %></li>
 <% end %>
+</ul>
