@@ -1,6 +1,6 @@
 <h1>hello world</h1>
 <% @orders.each do |order| %>
   <%= order.category_name %>
-  <%= order.state %>
   <%= humanized_money_with_symbol(order.amount) %>
+  <%= order.number_of_visits %>
   <% end %>
