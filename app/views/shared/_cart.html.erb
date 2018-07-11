@@ -1,0 +1,12 @@
+<% @items.each do |item| %>
+<ul>
+<%= item.state %>
+<li><%= item.category_name %></li>
+  <li>  <%= humanized_money_with_symbol(item.amount) %></li>
+  <li>  <%= item.number_of_visits %></li>
+<% end %>
+</ul>
+
+<h4> Subtotal:</h4>
+<%= humanized_money_with_symbol(@price_total) %>
+

@@ -1,12 +1,1 @@
-<% @orders_cart.each do |order| %>
-<ul>
-<%= order.state %>
-<li><%= order.category_name %></li>
-  <li>  <%= humanized_money_with_symbol(order.amount) %></li>
-  <li>  <%= order.number_of_visits %></li>
-<% end %>
-</ul>
-
-<h4> Subtotal:</h4>
-<%= humanized_money_with_symbol(@price_total) %>
-<%# raise %>
+<%= render 'shared/cart' %>

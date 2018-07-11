@@ -1,0 +1,11 @@
+<h1>Hi, <%= current_user.email%></h1>
+
+<% @orders.each do |order| %>
+<ul>
+  <li><%= order.category_name %></li>
+  <li>  <%= humanized_money_with_symbol(order.amount) %></li>
+  <li>  <%= order.number_of_visits %></li>
+</ul>
+    <% end %>
+
+
