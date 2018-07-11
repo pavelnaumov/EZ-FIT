@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
 
 
   def index
-    @orders = Order.all.where(state: 'paid')
+    @orders = current_user.orders.where(state: 'paid')
   end
 
   def create
@@ -18,5 +18,11 @@ class OrdersController < ApplicationController
 
   def cart
     @orders_cart = current_user.orders.where(state: 'pending')
+    @price_total = 0
+    for i in 0 .. @orders_cart.length - 1
+      @price_total += (@orders_cart[i].amount_cents)/100.to_i
+    end
   end
 end
+
+

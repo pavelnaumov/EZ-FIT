@@ -1,8 +1,8 @@
-<h1>hi</h1>
-<%= @gym.name %>
-<%= @category.name %>
+<h1>hi! You have chosen a <%= @category.name %> at <%= @gym.name %> </h1>
+<%#= @gym.name %>
+<%#= @category.name %>
 
-<p>Amount: <%= humanized_money_with_symbol(@category.price) %></p>
+<h1>Amount: <%= humanized_money_with_symbol(@category.price) %></h1>
 
 <%= form_tag orders_path do %>
   <%= hidden_field_tag 'category_id', @category.id %>

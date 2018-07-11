@@ -6,12 +6,11 @@ Rails.application.routes.draw do
 
   resources :gyms, only: [:index, :show] do
     resources :categories do
-      resources :bookings, only: :new
     end
   end
-  resources :bookings, only: [:index, :new]
 
   resources :orders, only: [:show, :create] do
     resources :payments, only: [:new, :create]
   end
+  resources :orders, only: :index
 end
