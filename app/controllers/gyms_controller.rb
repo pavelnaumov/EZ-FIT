@@ -6,7 +6,6 @@ class GymsController < ApplicationController
 
   def show
     @gym = Gym.find(params[:id])
-    @booking = Booking.new
     @categories = @gym.categories
   end
 end

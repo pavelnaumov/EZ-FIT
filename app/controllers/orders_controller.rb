@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
 
 
   def index
-    @orders = Order.all.where(state: 'paid')
+    @orders = current_user.orders.where(state: 'paid')
   end
 
   def create
