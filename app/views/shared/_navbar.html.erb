@@ -34,19 +34,7 @@
         </ul>
       </div>
     </div>
-    
-    <div class="navbar-wagon-cart">
-      <% if current_user.orders.empty?  %>
-      <% elsif current_user.orders.last.state == "pending" %>
-      <%= link_to order_path(current_user.orders.last) do %>
-      <i class="fas fa-shopping-cart"></i>
-      <div class="number-of-articles">
-        <%= current_user.orders.where(state: 'pending').length %>
-      </div>
-      <% end %>
-      <% end %>
-    </div>
-  </div>
+
   <% else %>
   <!-- Login link (when logged out) -->
   <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
