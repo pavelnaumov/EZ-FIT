@@ -20,7 +20,7 @@ class OrdersController < ApplicationController
     @orders_cart = current_user.orders.where(state: 'pending')
     @price_total = 0
     for i in 0 .. @orders_cart.length - 1
-      @price_total += @orders_cart[i].amount_cents.to_i
+      @price_total += (@orders_cart[i].amount_cents)/100.to_i
     end
   end
 end
