@@ -8,7 +8,8 @@ Gym.create!(
   description: "Standard gym",
   address: "Rua Viriato, 402 Picoas Plaza, Lisbon, Portugal",
   facilities: "Very good selection of free weights and machines. New equipment",
-  rating: 4.5
+  rating: 4.5,
+  photo:"https://www.washingtonian.com/wp-content/uploads/2017/06/6-30-17-equinox-one-hill-south-apartments-navy-yard-dc-lede-994x559.jpg"
   )
 
 Gym.create!(
@@ -16,7 +17,8 @@ Gym.create!(
   description: "Standard gym",
   address: "Avenida da República 52-B 1050-196 Lisbon Portugal",
   facilities: "Very good selection of free weights and machines. New equipment",
-  rating: 4.5
+  rating: 4.5,
+  photo:"https://www.washingtonian.com/wp-content/uploads/2017/06/6-30-17-equinox-one-hill-south-apartments-navy-yard-dc-lede-994x559.jpg"
   )
 
 Gym.create!(
@@ -24,7 +26,8 @@ Gym.create!(
   description: "Premium gym",
   address: "Rua do Carmo, 29 1200-093 Lisbon Portugal",
   facilities: "Very good selection of free weights and machines. New equipment",
-  rating: 4.5
+  rating: 4.5,
+  photo:"https://www.washingtonian.com/wp-content/uploads/2017/06/6-30-17-equinox-one-hill-south-apartments-navy-yard-dc-lede-994x559.jpg"
   )
 
 Gym.create!(
@@ -32,7 +35,8 @@ Gym.create!(
   description: "Premium Gym",
   address: "Av. Fontes Pereira de Melo, 16 1025-121 Lisbon Portugal",
   facilities: "Very good selection of free weights and machines. New equipment",
-  rating: 4.5
+  rating: 4.5,
+  photo:"https://www.washingtonian.com/wp-content/uploads/2017/06/6-30-17-equinox-one-hill-south-apartments-navy-yard-dc-lede-994x559.jpg"
   )
 
 Gym.create!(
@@ -40,7 +44,8 @@ Gym.create!(
   description: "Basic Gym",
   address: "Av. Almirante Reis, 172 1000-053 Lisbon Portugal",
   facilities: "Very good selection of free weights and machines. New equipment",
-  rating: 4.5
+  rating: 4.5,
+  photo:"https://www.washingtonian.com/wp-content/uploads/2017/06/6-30-17-equinox-one-hill-south-apartments-navy-yard-dc-lede-994x559.jpg"
   )
 
 Gym.create!(
@@ -48,7 +53,8 @@ Gym.create!(
   description: "Standard-Premium Gym",
   address: "Avenida General Norton de Matos Estádio Sport Lisboa e Benfica 1500-313 Lisbon Portugal",
   facilities: "Very good selection of free weights and machines. New equipment",
-  rating: 4.5
+  rating: 4.5,
+  photo:"https://www.washingtonian.com/wp-content/uploads/2017/06/6-30-17-equinox-one-hill-south-apartments-navy-yard-dc-lede-994x559.jpg"
   )
 
 Gym.create!(
@@ -56,7 +62,8 @@ Gym.create!(
   description: "Standard gym, good quality",
   address: "Travessa da Nazaré, 21 1100-368 Lisbon Portugal",
   facilities: "Very good selection of free weights and machines. New equipment",
-  rating: 4.5
+  rating: 4.5,
+  photo:"https://www.washingtonian.com/wp-content/uploads/2017/06/6-30-17-equinox-one-hill-south-apartments-navy-yard-dc-lede-994x559.jpg"
   )
 
 Gym.create!(
@@ -64,7 +71,8 @@ Gym.create!(
   description: "Standard gym, good quality",
   address: "Rua da Cintura do Porto a Santos, Armazém J 1200-109 Lisbon Portugal",
   facilities: "Very good selection of free weights and machines. New equipment",
-  rating: 4.5
+  rating: 4.5,
+  photo:"https://www.washingtonian.com/wp-content/uploads/2017/06/6-30-17-equinox-one-hill-south-apartments-navy-yard-dc-lede-994x559.jpg"
   )
 
 Gym.create!(
@@ -72,7 +80,8 @@ Gym.create!(
   description: "Standard-Premium Gym",
   address: "Rua Sampaio e Pina nº 64 A 1070-250 Lisbon Portugal",
   facilities: "Very good selection of free weights and machines. New equipment",
-  rating: 4.5
+  rating: 4.5,
+  photo:"https://www.washingtonian.com/wp-content/uploads/2017/06/6-30-17-equinox-one-hill-south-apartments-navy-yard-dc-lede-994x559.jpg"
   )
 
   Gym.all.each do |gym|

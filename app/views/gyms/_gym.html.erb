@@ -1,0 +1,15 @@
+<div class="col-xs-12 col-sm-6 col-lg-4 js-card">
+  <div class="card">
+    <%= link_to gym_path(gym) do %>
+    <div class="card-picture"
+    style="background: url('<%= gym.photo %>')">
+    <div class="card-title">
+      <p><%= gym.name %></p>
+      <div class="card-footer">
+        <p><%= gym.address %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

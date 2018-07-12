@@ -1,0 +1,6 @@
+<h1>Dear <%= current_user.email %>, thank you for your purchase</h1>
+<h2> You have purchased a <%= @order.category_name %> at <%= @order.gym_name %></h2>
+<h2>Your pass for <%= @order.number_of_visits %> will be valid for 30 days </h2>
+<h2> Have a nice training</h2>
+
+<%= link_to "Back to the home page", gyms_path, class: "btn btn-success"  %>
