@@ -34,21 +34,21 @@
   }
 }
 
-.card .card-title{
+.card-title{
   padding: 0 5%;
   height: 20%;
 
 }
 
-.card .card-title p{
+.card-title p{
   margin: 0;
   font-size: 20px;
   padding: 3% 0;
-  color: $dark-gray;
-  position: center;
+  color: #ffffff;
+  font-size: x-large;
 }
 
-.card .card-footer {
+.card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,9 +56,11 @@
   height: 15%;
   padding: 0 5%;
   color: $green;
+  position: relative;
+  padding-top: 280px;
 }
 
-.card .card-footer p{
+.card-footer p{
   font-size: 20px;
   margin: 0;
   padding: 0;
