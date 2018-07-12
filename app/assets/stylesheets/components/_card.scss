@@ -1,3 +1,4 @@
+
 .cards-container {
   height: 100%;
   width: 70%;
@@ -12,7 +13,7 @@
   color: $dark-gray;
   height: 400px;
   max-width: 320px;
-  background: $light-gray;
+  background: #555555;
   margin: 20px 10px;
   box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.2);
   border-radius: 2px;
@@ -30,37 +31,39 @@
   transition: all 0.6s;
   &:hover {
     opacity: 0.8;
-    border-top: 8px solid green;
+    border-top: 8px solid $red;
   }
 }
 
-.card .card-title{
+.card-title{
   padding: 0 5%;
   height: 20%;
 
 }
 
-.card .card-title p{
+.card-title p{
   margin: 0;
-  font-size: 20px;
   padding: 3% 0;
-  color: $dark-gray;
-  position: center;
+  color: #ffffff;
+  font-size: 20px;
+
 }
 
-.card .card-footer {
+.card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid rgb(230, 230, 230);
   height: 15%;
   padding: 0 5%;
-  color: $green;
+  color: $red;
+  position: relative;
+  padding-top: 280px;
 }
 
-.card .card-footer p{
+.card-footer p{
   font-size: 20px;
   margin: 0;
   padding: 0;
-  color: $dark-gray;
+  color: #F4F4F4;
 }
