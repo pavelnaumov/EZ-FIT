@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   get '/passes', to: 'orders#index'
-  get '/cart', to: 'orders#cart'
+  # get '/cart', to: 'orders#show'
 
   resources :gyms, only: [:index, :show] do
     resources :categories do
