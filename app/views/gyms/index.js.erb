@@ -1,0 +1,22 @@
+var newCards = document.querySelectorAll('.js-card');
+function refreshList(innerHTML) {
+  document.querySelector('.cards-container').innerHTML = innerHTML;
+}
+// store gyms in variable
+var gymsHTML = '<%= j render @gyms %>'
+
+function refreshMap(innerHTMLMap) {
+  const newMap = document.getElementById('map-container');
+  newMap.innerHTML = innerHTMLMap;
+}
+
+refreshMap('<%= j render "map" %>');
+document.app.initMap(document.getElementById('map'));
+  if (!window.isMapOpen) {
+    gymsHTML = gymsHTML.replace(/col-lg-4/g, 'col-lg-3')
+  }
+  console.log(gymsHTML);
+  refreshList(gymsHTML);
+
+
+console.log(window.isMapOpen);

@@ -1,14 +1,4 @@
-<% @gyms.each do |gym| %>
-<div class="container">
-    <div class="col-xs-12 col-sm-4">
-      <div class="card">
-        <div class="card-gym-name-address">
-          <%= gym.name %> 
-          <%= gym.address %>
-        </div>
-      </div>
-    </div>
+<div class="wrapper">
+  <div class="cards-container">
+    <%= render @gyms%>
   </div>
-</div>
-</div>
-<% end %>
