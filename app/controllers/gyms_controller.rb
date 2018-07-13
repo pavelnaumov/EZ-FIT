@@ -7,7 +7,6 @@ class GymsController < ApplicationController
      {
         lat: gym.latitude,
         lng: gym.longitude,
-        icon: iconmarker,
         infoWindow: {
           content: gym.name
         }
