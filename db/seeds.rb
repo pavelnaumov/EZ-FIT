@@ -2,6 +2,7 @@ Gym.destroy_all
 Booking.destroy_all
 User.destroy_all
 Order.destroy_all
+Category.destroy_all
 
 puts "Finished Cleaning"
 

@@ -1,11 +1,11 @@
 class GymsController < ApplicationController
 
   def index
-    @gyms = Gym.where.not(latitide: nil, longitude: nil)
+    @gyms = Gym.all
 
     @markers = @gyms.map do |gym|
       {
-        lat: gym.latitide,
+        lat: gym.latitude,
         lng: gym.longitude
       }
   end
