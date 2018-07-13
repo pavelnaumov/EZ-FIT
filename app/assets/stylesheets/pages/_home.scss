@@ -1,1 +1,5 @@
-// Specific CSS for your home-page
+.page-wrapper {
+  min-height: calc(100vh - 60px);
+  overflow: auto;
+  background-color: $light-gray;
+}
