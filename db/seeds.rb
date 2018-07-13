@@ -1,7 +1,11 @@
 Gym.destroy_all
 Booking.destroy_all
+User.destroy_all
+Order.destroy_all
 
 puts "Finished Cleaning"
+
+puts "Creating Gyms"
 
 Gym.create!(
   name: "Fitness Hut",
@@ -84,11 +88,50 @@ Gym.create!(
   photo:"https://www.washingtonian.com/wp-content/uploads/2017/06/6-30-17-equinox-one-hill-south-apartments-navy-yard-dc-lede-994x559.jpg"
   )
 
-  Gym.all.each do |gym|
-    Category.create!(name: "1-Time Pass", price: 15, gym: gym, number_of_visits: "1 Visit")
-    Category.create!(name: "10-Times Pass", price: 25, gym: gym, number_of_visits: "10 Visits")
-    Category.create!(name: "Unlimited One Month Pass", price: 115, gym: gym, number_of_visits: "Unlimited Visits")
-  end
+puts "Finished Creating Gyms"
 
+puts "Creating Categories"
+Gym.all.each do |gym|
+  Category.create!(name: "1-Time Pass", price: 15, gym: gym, number_of_visits: "1 Visit")
+  Category.create!(name: "10-Times Pass", price: 25, gym: gym, number_of_visits: "10 Visits")
+  Category.create!(name: "Unlimited One Month Pass", price: 115, gym: gym, number_of_visits: "Unlimited Visits")
+end
+
+puts "Finished Creating Categories"
+
+puts "Creating users"
+
+User.create!(
+  email: "paul.naumov@yahoo.com" ,
+  first_name: "Paul" ,
+  last_name: "Naumov",
+  password: 123456)
+
+User.create!(
+  email: "bnaumov@mail.com" ,
+  first_name: "Boris" ,
+  last_name: "Naumov",
+  password: 123456)
+
+User.create!(
+  email: "nikfilimonov@mail.com" ,
+  first_name: "Nik" ,
+  last_name: "Filimonov",
+  password: 123456)
+
+  User.create!(
+    email: "joanareis@mail.com" ,
+    first_name: "Joana" ,
+    last_name: "Reis",
+    password: 123456)
+
+    User.create!(
+    email: "carlos.mendes@mail.com" ,
+    first_name: "Carlos" ,
+    last_name: "Mendes",
+    password: 123456)
+
+
+puts "Finished Creating Users"
 
 puts "Done generating seeds!"
