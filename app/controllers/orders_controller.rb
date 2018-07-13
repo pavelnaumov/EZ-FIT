@@ -19,22 +19,6 @@ class OrdersController < ApplicationController
 end
 
 
-# def cart
-#     @orders_cart = current_user.orders.where(state: 'pending') #like items in F
-#     @order = Order.find(params[:id])
-#     @items = current_user.orders.where(state: 'pending')
-#     @price_total = 0
-#     for i in 0 .. @items.length - 1
-#       @price_total += (@items[i].amount_cents)/100.to_i
-#     end
-#   end
-
-
-
-
-
-
-
 
 
 
