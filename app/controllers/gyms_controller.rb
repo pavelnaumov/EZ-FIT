@@ -4,9 +4,13 @@ class GymsController < ApplicationController
     @gyms = Gym.all
 
     @markers = @gyms.map do |gym|
-      {
+     {
         lat: gym.latitude,
-        lng: gym.longitude
+        lng: gym.longitude,
+        icon: iconmarker,
+        infoWindow: {
+          content: gym.name
+        }
       }
   end
 end
