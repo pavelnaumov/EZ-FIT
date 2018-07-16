@@ -1,32 +1,11 @@
-<h1><%= @gym.name %></h1>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Description</th>
-            <th>Facilities</th>
-            <th>Rating</th>
-            <th colspan="5"></th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td><%= @gym.name %></td>
-            <td><%= @gym.address %></td>
-            <td><%= @gym.description %></td>
-            <td><%= @gym.facilities %></td>
-            <td><%= @gym.rating %></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="gym-banner" style="background-image: url('<%= @gym.photo %>');">
+  <div id="gym-banner-description">
+    <h1> <%= @gym.name %></h1>
+    <h2><%= @gym.address %></h2>
+    <h3> <%= @gym.facilities %></h3>
   </div>
 </div>
 
+<div class="category-card">
 <%= render 'shared/booking_category' %>
+</div>
