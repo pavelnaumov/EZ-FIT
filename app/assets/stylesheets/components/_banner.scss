@@ -1,0 +1,44 @@
+.gym-banner {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  height: 368px !important;
+}
+
+#gym-banner-description h1{
+  color: #ffffff;
+  font-family: $main-font;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  padding-top: 125px;
+
+}
+
+#gym-banner-description h2{
+  color: #ffffff;
+  font-family: $main-font;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+
+
+}
+
+#gym-banner-description h3{
+  color: #ffffff;
+  font-family: $main-font;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  padding-top: 44px;
+}

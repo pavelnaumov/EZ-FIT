@@ -1,19 +1,6 @@
-.info {
-  height: 100%;
+.show {
+  height: 100vh;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 200px;
-  padding-top: 200px;
-  .concept-details{
-    width: 60%;
-  }
-
-  p {
-    font-size: 17px;
-    color: gray;
-  }
 }
+
 

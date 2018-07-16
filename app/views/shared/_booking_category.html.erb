@@ -1,7 +1,16 @@
-<h1> Packages: </h1>
-
 <% @categories.each do |category| %>
-<p><%= humanized_money_with_symbol(category.price) %></p> 
-<%= category.number_of_visits %>
-  <%= link_to category.name, gym_category_path(@gym, category.id), class: "btn btn-success" %>
+<div class="col-xs-4 col-sm-4 col-lg-3">
+  <div class="category-card">
+    <div class="category-card-title">
+      <p> <%= category.name %></p>
+      <p> <%= category.number_of_visits %></p>
+      <p><%= humanized_money_with_symbol(category.price) %></p> 
+    </div>
+    <div class="category-card-footer">
+      <%= link_to "Buy", gym_category_path(@gym, category.id), class: "btn btn-success" %>
+    </div>
+  </div>
+</div>
 <% end %>
+</div>
+</div>
