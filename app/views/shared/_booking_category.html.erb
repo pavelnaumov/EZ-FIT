@@ -2,15 +2,31 @@
 <div class="col-xs-4 col-sm-4 col-lg-3">
   <div class="category-card">
     <div class="category-card-title">
-      <p> <%= category.name %></p>
+      <div id="category-card-title-line">
+        <div id="category-card-name">
+          <p> <%= category.name %></p>
+        </div>
+      </div>
       <p> <%= category.number_of_visits %></p>
-      <p><%= humanized_money_with_symbol(category.price) %></p> 
-    </div>
-    <div class="category-card-footer">
-      <%= link_to "Buy", gym_category_path(@gym, category.id), class: "btn btn-success" %>
+      <p>Access to all facilities</p>
+      <% if category.name != "Unlimited One Month Pass" %>
+      <p>Valid for 30 days</p>
+      <% else %>
+      <p> Valid for 60 days</p>
+      <% end %>
+
+      <div id="category-card-price">
+        <h2><%= humanized_money(category.price) %> Eur</h2>
+      </div>
+      <div class="category-card-footer">
+        <div id="category-card-footer-line">
+        </div>
+        <%= link_to "", gym_category_path(@gym, category.id), class: "button-buy" %>
+        <div id="button-text">
+          <h2>Purchase</h2>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 <% end %>
-</div>
-</div>

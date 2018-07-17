@@ -89,40 +89,64 @@
 .category-card {
   overflow: hidden;
   color: $dark-gray;
-  height: 400px;
-  max-width: 300px;
-  background: #555555;
-  margin: 20px 10px;
+  height: 300px;
+  max-width: 235px;
+  background: white;
+  margin: 0px 40px;
   box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.2);
-  border-radius: 2px;
+  border-radius: 15px;
 
 }
 
 .category-card-title {
   padding: 0 5%;
-  height: 20%;
+}
+
+#category-card-title-line {
+  border-top: 1px solid rgb(230, 230, 230);
+  position: relative;
+  top: 75px;
+}
+
+#category-card-footer-line {
+  border-top: 1px solid rgb(230, 230, 230);
+  position: relative;
+  bottom: -30px;
 }
 
 .category-card-title p {
   margin: 0;
   padding: 3% 0;
-  color: #ffffff;
+  color: black;
   font-family: $main-font;
-  font-size: 24px;
-  font-style: normal;
+  font-size: 18px;
   font-weight: bold;
-  line-height: normal;
+  position: relative;
+  top: 60px;
+
 }
 
-.category-card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid rgb(230, 230, 230);
-  height: 15%;
-  padding: 0 5%;
-  color: $red;
+#category-card-name p {
+  margin: 0;
+  padding: 3% 0;
+  color: black;
+  font-family: $main-font;
+  font-size: 16px;
+  font-weight: bold;
   position: relative;
-  padding-top: 280px;
+  top: -75px;
+}
+#category-card-price h2 {
+  color: black;
+  font-family: $main-font;
+  position: relative;
+  top: -135px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+
+.category-card-footer {
+  align-items: center;
 }
 
