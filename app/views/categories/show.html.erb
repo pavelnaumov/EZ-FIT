@@ -1,13 +1,33 @@
-<h1>hi! You have chosen a <%= @category.name %> at <%= @gym.name %> </h1>
-<%#= @gym.name %>
-<%#= @category.name %>
-
-<h1>Amount: <%= humanized_money_with_symbol(@category.price) %></h1>
-
-<%= form_tag orders_path do %>
-  <%= hidden_field_tag 'category_id', @category.id %>
-  <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
-<% end %>
-
-
-### This can be something like an order review/order start ###
+<div class="order-review">
+  <div class="review-box">
+    <div id="review-box-header"><h1> Review and Pay</h1></div>
+    <div id="order-category-name">
+      <h3><%= @category.name %></h3>
+    </div>
+    <div id="order-category-validity">
+      <% if @category.name != "Unlimited One Month Pass" %>
+      <h3>The following pass would be valid for 30 days</h3>
+      <% else %>
+      <h3>The following pass would be valid for 60 days</h3>
+      <% end %>
+    </div>
+    <div id="gym-name">
+      <h2><%= @gym.name %></h3>
+      </div>
+      <div id="review-card-footer-line">
+        <div id="order-total">
+          <h2>Total:</h2>
+          <h3><%=humanized_money_with_symbol(@category.price) %></h3>
+        </div>
+      </div>
+    </div>
+    <%= form_tag orders_path do %>
+    <%= hidden_field_tag 'category_id', @category.id %>
+    <%= submit_tag 'Purchase', class: 'button-buy-review' %>
+    <div id="button-text-review">
+      <% end %>
+      <h2>Purchase</h2>
+    </div>
+  </div>
+</div>
+</div>

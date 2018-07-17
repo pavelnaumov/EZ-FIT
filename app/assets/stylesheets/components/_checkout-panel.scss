@@ -1,0 +1,82 @@
+.order-review {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  padding: 10px 10px 10px 10px;
+}
+
+.review-box {
+
+  overflow: hidden;
+  color: $dark-gray;
+  height: 400px;
+  max-width: 400px;
+  background: #ffffff;
+  margin: 20px 10px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  position: relative;
+  left: 515px;
+}
+
+#review-box-header h1 { 
+  font-family: $main-font;
+  position: absolute;
+  left: 80px;
+  font-size: 32px;
+  font-weight: 900;
+
+}
+
+#order-category-name h3 {
+  font-family: $main-font;
+  position: absolute;
+  left: 125px;
+  bottom: 283px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+#order-category-validity h3 {
+  font-family: $main-font;
+  position: absolute;
+  left: 30px;
+  top: 165px;
+  font-size: 18px;
+}
+
+#order-total h3 {
+  font-family: $main-font;
+  position: absolute;
+  font-size: 24px;
+  bottom: 0px;
+  right: 30px;
+  font-weight: 700;
+}
+
+#order-total h2 {
+  font-family: $main-font;
+  position: absolute;
+  font-size: 24px;
+  bottom: 0px;
+  left: 35px;
+  font-weight: 700;
+}
+
+#gym-name h2 {
+  font-family: $main-font;
+  position: absolute;
+  font-size: 18px;
+  bottom: 240px;
+  left: 147px;
+  font-weight: 700;
+}
+
+#review-card-footer-line {
+  border-top: 1px solid rgb(230, 230, 230);
+  position: relative;
+  bottom: -330px;
+}

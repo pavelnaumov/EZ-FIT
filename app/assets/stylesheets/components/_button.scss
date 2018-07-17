@@ -34,3 +34,44 @@
   position: relative;
   
 }
+
+
+
+.button-buy-review {
+  width: 200px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: $ez-blue;
+  font-family: "Lato", "sans-serif";
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  position: absolute;
+  top: 445px;
+  right: 610px;
+
+
+  &:hover{
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+#button-text-review {
+  position: relative;
+  bottom: -22px;
+}
+
+#button-text-review h2 {
+  color: white;
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  position: relative;
+  top: -37px;
+  right: -55px;
+  
+}
