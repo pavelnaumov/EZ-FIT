@@ -1,0 +1,83 @@
+.passes-cards-container {
+  height: 100%;
+  width: 90%;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.pass-card {
+  overflow: hidden;
+  color: $dark-gray;
+  height: 400px;
+  max-width: 300px;
+  background: #555555;
+  margin: 20px 10px;
+  box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.2);
+  border-radius: 2px;
+}
+
+.pass-card-photo {
+  width: 100%;
+  height: 65%;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+  top: 55px;
+}
+
+.pass-card-title {
+  padding: 0 5%;
+  height: 20%;
+  position: relative;
+  top: -55px;
+  left: 55px;
+}
+
+.pass-card-title p{
+  margin: 0;
+  padding: 5% 0;
+  color: #ffffff;
+  font-family: $main-font;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.pass-card-title h3 {
+  margin: 0;
+  padding: 5% 0;
+  color: #ffffff;
+  font-family: $main-font;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  position: relative;
+  left: -35px;
+  font-weight: 900;
+}
+
+.pass-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15%;
+  padding: 0 5%;
+  color: $red;
+  position: relative;
+  padding-top: 250px;
+}
+
+.pass-card-footer p {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: #F4F4F4;
+  font-family: $main-font;
+  position: relative;
+  left: 50px;
+  font-weight: 900;
+}
