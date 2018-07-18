@@ -1,13 +1,18 @@
-<h1>Hi, <%= current_user.first_name%></h1>
-<h2> You have <%= @orders.length %> passes</h2>
-
 <% @orders.each do |order| %>
-<ul>
-  <li><%= order.category_name %></li>
-  <li>  <%= humanized_money_with_symbol(order.amount) %></li>
-  <li>  <%= order.number_of_visits %></li>
-  <li> <%= order.gym_name %></li>
-</ul>
-    <% end %>
-
-
+<div class="col-xs-4 col-sm-4 col-lg-4">
+  <div class="pass-card">
+    <div class="pass-card-photo" style="background: url('<%= order.gym_photo %>')">
+      <div class="pass-card-title">
+        <% if order.category_name != "Unlimited One Month Pass" %>
+        <p> <%= order.category_name %></p>
+        <% else %>
+        <h3> <%= order.category_name %></h3>
+        <% end %>
+      </div>
+      <div class="pass-card-footer">
+        <p><%= order.gym_name %></p>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
