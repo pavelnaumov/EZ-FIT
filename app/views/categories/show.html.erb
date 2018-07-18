@@ -1,9 +1,16 @@
 <div class="order-review">
   <div class="review-box">
     <div id="review-box-header"><h1> Review and Pay</h1></div>
-    <div id="order-category-name">
+    <div class="order-category-name">
+       <% if @category.name != "Unlimited One Month Pass" %>
+       <div id="order-category-name-short">
       <h3><%= @category.name %></h3>
     </div>
+    <% else %>
+    <div id="order-category-name-long">
+      <h3><%= @category.name %></h3>
+      </div>
+      <% end %>
     <div id="order-category-validity">
       <% if @category.name != "Unlimited One Month Pass" %>
       <h3>The following pass would be valid for 30 days</h3>

@@ -48,8 +48,8 @@
   letter-spacing: 0.5px;
   color: #ffffff;
   position: absolute;
-  top: 445px;
-  right: 610px;
+  top: 345px;
+  right: 105px;
 
 
   &:hover{
@@ -74,4 +74,67 @@
   top: -37px;
   right: -55px;
   
+}
+
+
+.button-home {
+  width: 200px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: $ez-blue;
+  font-family: "Lato", "sans-serif";
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  position: absolute;
+  top: 455px;
+  right: 280px;
+  &:hover{
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.button-my-passes {
+  width: 200px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: $ez-green;
+  font-family: "Lato", "sans-serif";
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  position: absolute;
+  top: 455px;
+  right: 705px;
+  &:hover{
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+#button-text-summary h2 {
+  color: white;
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 440px;
+  left: 723px;
+}
+
+#button-text-summary h6 {
+  color: white;
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 452px;
+  left: 300px;
 }
