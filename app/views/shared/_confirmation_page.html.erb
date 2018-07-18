@@ -1,0 +1,29 @@
+<div class="confirmation-box-thanks">
+  <h1><%= current_user.first_name %>, thank you for your order</h1>
+  <p>We'll follow up with email containing your secret code</p>
+  <p>You can also find your pass in<strong> My Passes</strong> section</p>
+  <h5>Order number: <strong><%= @order.id %></strong></h5>
+  <h6>Order date: <strong><%= @order.created_at %></strong></h6>
+</div>
+<div class="confirmation-box-summary">
+  <div id="confirmation-box-summary-line"></div>
+  <div class="confirmation-gym-picture"
+  style="background: url('<%= @order.gym_photo %>')">
+</div>
+<h1>Order Summary</h1>
+<div id="confirmation-box-gym">
+  <h3>Gym name: <strong><%= @order.gym_name %></strong></h3>
+  <h4>Pass purchased: <strong><%= @order.category_name %></strong></h4>
+  <h5>Price paid: <strong><%= humanized_money_with_symbol(@order.amount) %></strong></h5>
+  <%= link_to "", root_path, class: "button-home" %>
+  <%= link_to "", passes_path, class: "button-my-passes" %>
+  <div id="button-text-summary">
+    <h6>My Passes</h6>
+    <h2>Home Page</h2>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
