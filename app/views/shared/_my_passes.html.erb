@@ -4,13 +4,13 @@
     <div class="pass-card-photo" style="background: url('<%= order.gym_photo %>')">
       <div class="pass-card-title">
         <% if order.category_name != "Unlimited One Month Pass" %>
-        <p> <%= order.category_name %></p>
+        <h2 class="pass-name text-center"> <%= order.category_name %></h2>>
         <% else %>
-        <h3> <%= order.category_name %></h3>
+        <h3 class="pass-name text-center"> <%= order.category_name %></h3>
         <% end %>
       </div>
       <div class="pass-card-footer">
-        <p><%= order.gym_name %></p>
+        <p class="gym-name text-center"><%= order.gym_name %></p>
       </div>
     </div>
   </div>
