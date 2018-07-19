@@ -137,3 +137,29 @@
   top: 452px;
   left: 300px;
 }
+
+
+.button-home {
+  width: 275px;
+  height: 60px;
+  border-radius: 40px;
+  background-color: #35BCB6;
+  font-family: "Lato", "sans-serif";
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  position: absolute;
+  top: 715px;
+  right: 590px;
+}
+
+#button-home-text h2 {
+  color: white;
+  font-family: $main-font;
+  font-size: 24px;
+  font-weight: 900;
+  position: absolute;
+  top: -10px;
+  left: 50px;
+} 
