@@ -21,12 +21,17 @@
       <div class="category-card-footer">
         <div id="category-card-footer-line">
         </div>
-        <%= link_to "", gym_category_path(@gym, category.id), class: "button-buy" %>
-        <div id="button-text">
-          <h2>Purchase</h2>
+        <%= link_to  gym_category_path(@gym, category.id) do %>
+        <div class="button-buy">
+          <div id="button-text">
+            <h2>Purchase</h2>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 <% end %>
+<% end %>
+
+
