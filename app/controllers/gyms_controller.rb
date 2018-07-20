@@ -1,8 +1,10 @@
 class GymsController < ApplicationController
 
   def index
+    if params[:query].present?
+    @gyms = Gym.where("name ILIKE?","%#{params[:query]}%")
+  else
     @gyms = Gym.all
-
     @markers = @gyms.map do |gym|
      {
         lat: gym.latitude,
@@ -11,6 +13,7 @@ class GymsController < ApplicationController
           content: gym.name
         }
       }
+    end
   end
 end
 
