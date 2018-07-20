@@ -15,15 +15,15 @@
   <h3>Gym name: <strong><%= @order.gym_name %></strong></h3>
   <h4>Pass purchased: <strong><%= @order.category_name %></strong></h4>
   <h5>Price paid: <strong><%= humanized_money_with_symbol(@order.amount) %></strong></h5>
-  <%= link_to "", root_path, class: "button-home" %>
-  <%= link_to "", passes_path, class: "button-my-passes" %>
+  <%= link_to passes_path do %>
+  <div class="button-my-passes"></div>
   <div id="button-text-summary">
     <h6>My Passes</h6>
-    <h2>Home Page</h2>
   </div>
 </div>
 </div>
 </div>
 </div>
 </div>
+<% end %>
 
