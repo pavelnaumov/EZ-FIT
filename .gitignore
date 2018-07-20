@@ -7,7 +7,7 @@ tmp/*
 *.swp
 .DS_Store
 public/assets_hide
-public/assests
+public/assets
 public/packs
 public/packs-test
 node_modules
