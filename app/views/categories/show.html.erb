@@ -2,15 +2,15 @@
   <div class="review-box">
     <div id="review-box-header"><h1> Review and Pay</h1></div>
     <div class="order-category-name">
-       <% if @category.name != "Unlimited One Month Pass" %>
-       <div id="order-category-name-short">
+     <% if @category.name != "Unlimited One Month Pass" %>
+     <div id="order-category-name-short">
       <h3><%= @category.name %></h3>
     </div>
     <% else %>
     <div id="order-category-name-long">
       <h3><%= @category.name %></h3>
-      </div>
-      <% end %>
+    </div>
+    <% end %>
     <div id="order-category-validity">
       <% if @category.name != "Unlimited One Month Pass" %>
       <h3>The following pass would be valid for 30 days</h3>
@@ -25,16 +25,14 @@
         <div id="order-total">
           <h2>Total:</h2>
           <h3><%=humanized_money_with_symbol(@category.price) %></h3>
+          <div class="payment-button">
+            <%= render 'shared/payment' %>
+          </div>
         </div>
       </div>
-    </div>
-    <%= form_tag orders_path do %>
-    <%= hidden_field_tag 'category_id', @category.id %>
-    <%= submit_tag 'Purchase', class: 'button-buy-review' %>
-    <div id="button-text-review">
-      <% end %>
-      <h2>Purchase</h2>
     </div>
   </div>
 </div>
 </div>
+</div>
+
