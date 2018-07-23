@@ -1,0 +1,67 @@
+
+.wrapper {
+  background-color: #F4F4F4;
+}
+
+
+// Value Proposition
+
+
+.value-proposition-card {
+  width: 300px;
+  height: 300px;
+}
+
+.value-proposition-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  h2 {
+
+    font-family: $main-font;
+    font-size: 32px;
+    font-weight: 700;
+
+  }
+  height: 150px;
+  
+}
+
+.value-proposition-list{
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+  font-size: 32px;
+
+}
+
+.value-proposition-card {
+  height: 300px;
+
+
+}
+.value-proposition-top-section {
+  text-align: center;
+  h3 {
+    font-size: 28px;
+    font-family: $main-font;
+  }
+}
+
+.value-proposition-avatar {
+  border-radius: 50px;
+  height: 70px;
+}
+
+.value-proposition-bottom-section {
+  text-align: center;
+  p {
+    font-size: 16px;
+    font-family: $main-font;
+  }
+}
+
+.value-proposition-image {
+  font-size: 28px;
+}
