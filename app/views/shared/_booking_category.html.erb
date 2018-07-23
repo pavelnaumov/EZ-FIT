@@ -1,5 +1,6 @@
+<div class="category-card-container">
 <% @categories.each do |category| %>
-<div class="col-xs-4 col-sm-4 col-lg-3">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-offset-12 centered">
   <div class="category-card">
     <div class="category-card-title">
       <div id="category-card-title-line">
@@ -21,17 +22,20 @@
       <div class="category-card-footer">
         <div id="category-card-footer-line">
         </div>
-        <%= link_to  gym_category_path(@gym, category.id) do %>
-        <div class="button-buy">
-          <div id="button-text">
-            <h2>Purchase</h2>
-          </div>
-        </div>
       </div>
+       <%= link_to gym_category_path(@gym, category.id) do %>
+       <div class="button-buy">
+         <div id="button-text">
+           <h2 class="text-center">Purchase</h2>
+         </div>
+       </div>
     </div>
   </div>
 </div>
 <% end %>
 <% end %>
+</div>
+
+
 
 

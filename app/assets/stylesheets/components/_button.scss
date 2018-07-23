@@ -9,8 +9,8 @@
   letter-spacing: 0.5px;
   color: #ffffff;
   position: absolute;
-  top: 251px;
-  left: 74px;
+  top: 280px;
+  left: 75px;
 
 
   &:hover{
@@ -97,23 +97,18 @@
 }
 
 .button-my-passes {
-  width: 200px;
-  height: 40px;
+  width: 270px;
+  height: 50px;
   border-radius: 40px;
-  background-color: $ez-green;
+  background-color: #45EBA5;
   font-family: "Lato", "sans-serif";
   font-size: 18px;
   font-weight: 900;
   letter-spacing: 0.5px;
   color: #ffffff;
-  position: absolute;
-  top: 455px;
-  right: 530px;
-  &:hover{
-    opacity: 1;
-    text-decoration: none;
-    color: white;
-  }
+  top: 150px;
+  right: -30px;
+  position: relative;
 }
 
 #button-text-summary h2 {
@@ -123,8 +118,8 @@
   font-weight: 900;
   letter-spacing: 1px;
   position: absolute;
-  top: 440px;
-  left: 723px;
+  top: -10px;
+  right: 90px;
 }
 
 #button-text-summary h6 {
@@ -139,35 +134,8 @@
 
 }
 
-
-.button-home {
-  width: 275px;
-  height: 60px;
-  border-radius: 40px;
-  background-color: #35BCB6;
-  font-family: "Lato", "sans-serif";
-  font-size: 18px;
-  font-weight: 900;
-  letter-spacing: 0.5px;
-  color: #ffffff;
-  position: absolute;
-  top: 715px;
-  right: 590px;
-}
-
-#button-home-text h2 {
-  color: white;
-  font-family: $main-font;
-  font-size: 24px;
-  font-weight: 900;
-  position: absolute;
-  top: -10px;
-  left: 50px;
-} 
-
 .payment-button {
-  position: absolute;
-  left: 145px;
-  padding-top: 20px;
+  position: relative;
+  bottom: -235px;
 
 }

@@ -1,8 +1,13 @@
 .gym-banner {
+  background: linear-gradient(-244deg, rgba(1,16,27,0.6) 100%, rgba(0,36,61,0.6) 100%),image-url('gym.jpg');
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: 50% 50% !important;
   height: 360px !important;
+  padding-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 #gym-banner-description h1{
