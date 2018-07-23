@@ -81,11 +81,9 @@
  height: 100%;
  width: 100%;
  overflow-y: scroll;
- padding: 0;
- margin: 0;
- flex-grow: 1;
- padding: 10px 10px 10px 10px;
  background-color: white;
+ display: flex;
+ justify-content: center;
 }
 
 .category-card {
