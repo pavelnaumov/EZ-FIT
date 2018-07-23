@@ -1,25 +1,23 @@
-.order-review {
+.order-review-container {
   height: 100%;
   width: 100%;
   overflow-y: scroll;
   padding: 0;
   margin: 0;
-  flex-grow: 1;
-  padding: 10px 10px 10px 10px;
 }
 
 .review-box {
-
   overflow: hidden;
-  color: $dark-gray;
+  color: #333333;
   height: 400px;
   max-width: 400px;
   background: #ffffff;
   margin: 20px 10px;
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
   position: relative;
-  left: 515px;
 }
 
 #review-box-header h1 { 
@@ -59,20 +57,20 @@
 }
 
 #order-total h3 {
-  font-family: $main-font;
-  position: absolute;
+  font-family: "Lato", "sans-serif";
+  position: relative;
   font-size: 24px;
-  bottom: 0px;
-  right: 30px;
+  bottom: -215px;
+  left: 140px;
   font-weight: 700;
 }
 
 #order-total h2 {
-  font-family: $main-font;
-  position: absolute;
+  font-family: "Lato", "sans-serif";
+  position: relative;
   font-size: 24px;
-  bottom: 0px;
-  left: 35px;
+  bottom: -265px;
+  left: -90px;
   font-weight: 700;
 }
 
@@ -87,6 +85,6 @@
 
 #review-card-footer-line {
   border-top: 1px solid rgb(230, 230, 230);
-  position: relative;
+  position: absolute;
   bottom: -330px;
 }
