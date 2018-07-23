@@ -28,12 +28,10 @@
 #button-text h2 {
   color: white;
   font-family: $main-font;
-  font-size: 18px;
-  font-weight: 900;
-  letter-spacing: 1px;
+  font-size: 20px;
   position: relative;
-  top: -37px;
-  
+  top: -12px;
+  font-weight: 900;
 }
 
 
@@ -87,13 +85,21 @@
   letter-spacing: 0.5px;
   color: #ffffff;
   position: absolute;
-  top: 455px;
-  right: 280px;
+  top: 625px;
+  right: 600px;
   &:hover{
     opacity: 1;
     text-decoration: none;
     color: white;
   }
+}
+
+
+#button-home-text h2 {
+  font-size: 18px;
+  position: relative;
+  top: -15px;
+  font-weight: 900;
 }
 
 .button-my-passes {
