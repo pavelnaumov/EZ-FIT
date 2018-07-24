@@ -3,6 +3,7 @@ class GymsController < ApplicationController
   def index
     if params[:query].present?
       @gyms = Gym.where("name ILIKE?","%#{params[:query]}%")
+      @markers
     else
       @gyms = Gym.all
       @markers = @gyms.map do |gym|
