@@ -1,0 +1,11 @@
+<div class="search-gyms-wrapper">
+  <div class="search-gyms">
+    <%= form_tag gyms_path, method: :get do %>
+    <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+      placeholder: "Find a gym" %>
+      <%= submit_tag "Find", class: "search-button" %>
+      <% end %>
+    </div>
+  </div>
