@@ -1,0 +1,71 @@
+.footer {
+
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-image: linear-gradient(rgba(30,30,30,0.8), rgba(30,30,30,0.8)), asset-url('footer-pic.jpg');
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  height: 220px !important;
+  align-items: center;
+  justify-content: center;
+}
+.footer h1 {
+  color: white;
+  opacity: 1;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  margin-left: 15px;
+  margin-top: 0;
+  position: relative;
+  top: -40px;
+}
+.footer-content {
+  color: white;
+  margin-left: 20px;
+  margin-right: 10px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+
+.footer-symbols {
+  font-size: 30px;
+  color: white;
+  padding-bottom : 0px;
+  padding-right: 30px;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.footer-logo {
+  width: 140px;
+  height: 50px;
+}
+
+.footer-logo img {
+ width: 200px;
+ height: 100px;
+ position: relative;
+ left: 30px;
+ top: 45px;
+}
+
