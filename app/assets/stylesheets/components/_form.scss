@@ -1,0 +1,155 @@
+.gym-wrapper {
+  background: linear-gradient(-244deg, rgba(1,16,27,0.6) 100%, rgba(0,36,61,0.6) 100%),image-url('form-pic.jpg');
+  height: 110vh;
+  width: 110vw;
+  background-size: cover;
+  color: white;
+  padding: 50px;
+  font-family: $main-font;
+}
+
+.gym-wrapper h2 {
+  font-family: $main-font;
+  font-size: 40px;
+}
+
+.form-inline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: $dark-gray;
+}
+
+.form-actions {
+  &button {
+    color: white;
+  }
+}
+
+.form-actions-user {
+  display: flex;
+  justify-content: space-between;
+}
+.reset {
+  input {
+    font-size: 18px;
+    padding-left: 0;
+    background: transparent;
+    &:hover{
+      opacity: 1;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.form-details{
+  // background-color: white;
+  padding: 15px;
+  box-shadow: 2px 2px 10px -4px rgba(0,0,0,0.75);
+  color: white;
+}
+
+.form-cancel {
+  float: right;
+  p {
+    color: black;
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-style: italic;
+  }
+  a {
+    font-size: 15px;
+  }
+
+}
+
+.repository {
+  width: 250px;
+}
+
+.recognitionStyling{
+  width: 100%;
+  height: 50px;
+  color: gray;
+}
+
+.labelStyling{
+  width: 100%;
+  color: red;
+}
+
+.detailStyling{
+  width: 100%;
+  border: none;
+  border-bottom: 0.5px solid gray ;
+  box-shadow: none;
+  color: white;
+}
+
+.detailStyling_user{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white ;
+  box-shadow: none;
+  position: left;
+  text-align: left;
+  border: 0.5px solid white;
+  color: white;
+}
+
+
+.detailStylingInline{
+  width: 40%;
+  border: none;
+  border-bottom: 0.5px solid gray ;
+  box-shadow: none;
+  color: white;
+}
+
+.detailLabelStyling{
+  font-weight: lighter ;
+  color: white;
+}
+
+.detailLabelStyling_boolean{
+  font-weight: bolder ;
+  margin-left: 10px;
+  color: white
+}
+
+.detailStyling_boolean{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.recognitionStylingName{
+  width: 100%;
+  height: 50px;
+  color: gray;
+  border: none;
+}
+
+.width{
+  width: 50%;
+}
+
+.forget-link {
+  font-size: 13px;
+}
+.shared{
+  display:flex;
+  a {
+    margin-right: 8px;
+    &:hover{
+      opacity: 1;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.container-forms {
+  font-weight: 900;
+}
