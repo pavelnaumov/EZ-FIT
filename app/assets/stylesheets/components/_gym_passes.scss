@@ -76,3 +76,15 @@
   left: 50px;
   font-weight: 900;
 }
+
+
+.section-header {
+  position: relative;
+  left: 25px;
+}
+
+.section-header h1 {
+  font-family: $main-font;
+  font-size: 52px;
+  font-weight: 700;
+}

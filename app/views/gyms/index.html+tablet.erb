@@ -1,19 +1,19 @@
+<%= render 'shared/search_tablet' %>
 <div class="wrapper-tablet">
-  <%#= form_tag gyms_path, method: :get do %>
-  <%#= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Find a gym" %>
-<%# end %>
   <div class="cards-container-tablet">
     <%= render @gyms%>
+    <div class="map-container-tablet">
+      <%= render 'map' %>
+    </div>
   </div>
 
-  <div class="map-container-tablet">
-    <%= render 'map' %>
-  </div>
+  
 
   <script>
-  const map = document.getElementById('map');
-  const mapContainer = document.getElementById('map-container');
-</script>
+    const map = document.getElementById('map');
+    const mapContainer = document.getElementById('map-container');
+  </script>
+
+
+
+

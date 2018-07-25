@@ -88,3 +88,101 @@
   position: absolute;
   bottom: -330px;
 }
+
+// order review + payment tablet
+
+.order-review-container-tablet {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.review-box-tablet {
+  overflow: hidden;
+  color: #333333;
+  height: 600px;
+  max-width: 600px;
+  background: #ffffff;
+  margin: 20px 10px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 80px;
+}
+
+
+#review-box-header-tablet h1 { 
+  font-family: "Lato", "sans-serif";
+  position: relative;
+  left: 60px;
+  font-size: 45px;
+  font-weight: 900;
+
+}
+
+#order-category-name-short-tablet h3 {
+  font-family: $main-font;
+  position: absolute;
+  left: 205px;
+  top: 100px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+#order-category-name-long-tablet h3 {
+ font-family: $main-font;
+ position: absolute;
+ left: 110px;
+ top: 100px;
+ font-size: 32px;
+ font-weight: 900;
+}
+
+
+#order-category-validity-tablet h3 {
+  font-family: "Lato", "sans-serif";
+  position: absolute;
+  left: 80px;
+  top: 335px;
+  font-size: 24px;
+}
+
+#order-total-tablet h3 {
+  font-family: "Lato", "sans-serif";
+  position: relative;
+  font-size: 32px;
+  bottom: -400px;
+  left: 105px;
+  font-weight: 700;
+}
+
+#order-total-tablet h2 {
+  font-family: "Lato", "sans-serif";
+  position: relative;
+  font-size: 32px;
+  bottom: -465px;
+  left: -325px;
+  font-weight: 700;
+}
+
+#gym-name-tablet h2 {
+  font-family: $main-font;
+  position: absolute;
+  font-size: 24px;
+  bottom: 337px;
+  left: 220px;
+  font-weight: 700;
+}
+
+#review-card-footer-line-tablet {
+  border-top: 1px solid rgb(230, 230, 230);
+  position: absolute;
+  bottom: -330px;
+}
+
+

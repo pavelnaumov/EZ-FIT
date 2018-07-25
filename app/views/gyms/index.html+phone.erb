@@ -1,21 +1,14 @@
+<%= render 'shared/search_mobile' %>
 <div class="wrapper-mobile">
-  <%#= form_tag gyms_path, method: :get do %>
-  <%#= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Find a gym" %>
-    <%# end %>
-    <div class="cards-container-mobile">
-      <%= render @gyms%>
-      <div class="map-container-mobile">
-        <%= render 'map' %>
-      </div>
-    </div>
+  <div class="cards-container-mobile">
+   <%#= render 'shared/search_mobile' %>
+   <%= render @gyms%>
+   <div class="map-container-mobile">
+    <%= render 'map' %>
+  </div>
+</div>
 
-
-
-
-    <script>
-      const map = document.getElementById('map');
-      const mapContainer = document.getElementById('map-container-mobile');
-    </script>
+<script>
+  const map = document.getElementById('map');
+  const mapContainer = document.getElementById('map-container-mobile');
+</script>
