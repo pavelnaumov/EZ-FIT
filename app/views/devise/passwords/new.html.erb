@@ -1,15 +1,27 @@
-<h2>Forgot your password?</h2>
+<div class="gym-wrapper">
+  <div class="container">
+    <h2 style="font-weight: bolder"; class = "text-center">Forgot your password?</h2>
+    <div class="col-md-6 col-md-offset-3">
+      <div class="form-details">
 
-<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= f.error_notification %>
+        <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+        <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
+        <div class="form-inputs" style="color: black">
+          <%= f.input :email, required: true, autofocus: true, input_html: { class: 'detailStyling_user'}, label_html: { class: 'detailLabelStyling'}%>
+        </div>
+
+        <div class="form-actions reset">
+          <%= f.button :submit, "Send me reset password instructions", label_html: { class: 'detailLabelStyling'}, input_html: { class: 'detailStyling_user'}%>
+        <% end %>
+
+        </div>
+        <div class="shared">
+        <%= render "devise/shared/links" %>
+
+
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Send me reset password instructions" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>
