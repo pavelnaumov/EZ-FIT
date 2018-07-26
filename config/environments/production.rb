@@ -96,6 +96,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Mailing configurations
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: "ez-fit-lisbon.herokuapp.com" }
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.default_url_options = { host: "ez-fit-lisbon.herokuapp.com" }
 end

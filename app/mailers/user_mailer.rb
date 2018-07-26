@@ -6,8 +6,9 @@ class UserMailer < ApplicationMailer
   #   en.user_mailer.welcome.subject
   #
 
-  def welcome(user)
-    @user = user
-    mail(:to => user.email, :subject => 'Welcome')       
-  end
+#   def welcome(user)
+#     @user = user
+#     mail(:to => user.email, :subject => 'Welcome')       
+#   end
+# end
 end
