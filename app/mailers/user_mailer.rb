@@ -9,4 +9,14 @@ class UserMailer < ApplicationMailer
     @user = user
     mail(:to => user.email, :subject => 'Welcome')       
   end
+
+  def creation_confirmation(order)
+    @order = order
+
+    mail(
+      to: @order.user.email,
+      subject: "Order #{@order.id}"
+      )
+
+  end
 end

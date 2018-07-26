@@ -15,10 +15,6 @@ class OrdersController < ApplicationController
     order  = Order.create!(category_name: category.name, gym_name: category.gym.name, gym_photo: category.gym.photo, number_of_visits: category.number_of_visits, amount: category.price, state: 'pending', user: current_user)
 
     redirect_to new_order_payment_path(order)
-
-    if @order.state == 'paid'
-      OrderMailer.creation_confirmation(@order).deliver_now
-    end
   end
 end
 

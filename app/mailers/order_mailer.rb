@@ -1,4 +1,5 @@
 class OrderMailer < ApplicationMailer
+  
   def creation_confirmation(order)
     @order = order
 
