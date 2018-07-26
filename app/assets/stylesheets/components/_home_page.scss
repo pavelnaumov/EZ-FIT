@@ -17,6 +17,8 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  position: relative;
+  top: -35px;
   h2 {
 
     font-family: $main-font;
@@ -33,6 +35,8 @@
   justify-content:space-around;
   text-align:center;
   font-size: 32px;
+  position: relative;
+  top: -45px;
 
 }
 

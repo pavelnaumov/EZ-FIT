@@ -1,4 +1,10 @@
 <div class="gym-wrapper">
+  <div class="arrow-back">
+    <%= link_to :back do %>
+    <%= image_tag('arrow-back.png')%>
+    <% end %>
+  </div>
+
   <div class="container">
     <h2 style="font-weight: bolder"; class = "text-center">Forgot your password?</h2>
     <div class="col-md-6 col-md-offset-3">
@@ -13,11 +19,11 @@
 
         <div class="form-actions reset">
           <%= f.button :submit, "Send me reset password instructions", label_html: { class: 'detailLabelStyling'}, input_html: { class: 'detailStyling_user'}%>
-        <% end %>
+          <% end %>
 
         </div>
         <div class="shared">
-        <%= render "devise/shared/links" %>
+          <%= render "devise/shared/links" %>
 
 
         </div>
