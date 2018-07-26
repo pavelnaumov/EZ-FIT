@@ -13,6 +13,7 @@ gem 'pg_search'
 gem "browser", require: "browser/browser"
 gem "letter_opener", group: :development
 gem 'postmark-rails'
+gem 'omniauth-facebook'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
