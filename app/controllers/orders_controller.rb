@@ -16,9 +16,9 @@ class OrdersController < ApplicationController
 
     redirect_to new_order_payment_path(order)
 
-    # if @order.state == 'paid'
-    #   OrderMailer.creation_confirmation(@order).deliver_now
-    # end
+    if @order.state == 'paid'
+      OrderMailer.creation_confirmation(@order).deliver_now
+    end
   end
 end
 
