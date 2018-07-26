@@ -53,7 +53,7 @@
 .form-cancel {
   float: right;
   p {
-    color: black;
+    color: white;
     font-size: 17px;
     margin-bottom: 0px;
     font-style: italic;
@@ -152,4 +152,11 @@
 
 .container-forms {
   font-weight: 900;
+}
+
+.arrow-back img {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  width: 50px;
 }
