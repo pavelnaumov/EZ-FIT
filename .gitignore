@@ -14,7 +14,11 @@ node_modules
 yarn-error.log
 .byebug_history
 .env
+.env*
+.env*
+
 
 # Ignore application configuration
 /config/application.yml
+.env*
 .env*
