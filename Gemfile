@@ -11,6 +11,7 @@ gem 'rails', '5.2.0'
 gem 'redis'
 gem 'pg_search'
 gem "browser", require: "browser/browser"
+gem "letter_opener", group: :development
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
