@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
 
 
   def index
+    @user = current_user
     @gyms = Gym.all
     @orders = current_user.orders.where(state: 'paid')
   end
