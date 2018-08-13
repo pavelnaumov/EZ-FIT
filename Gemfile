@@ -14,6 +14,7 @@ gem "browser", require: "browser/browser"
 gem "letter_opener", group: :development
 gem 'postmark-rails'
 gem 'omniauth-facebook'
+gem 'administrate'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'

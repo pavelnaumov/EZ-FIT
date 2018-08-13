@@ -29,4 +29,3 @@ def show
   @categories = @gym.categories
 end
 end
-
