@@ -67,6 +67,59 @@
   align-items: flex-end;
 }
 
+.gym-banner-mobile-large {
+  background: linear-gradient(-244deg, rgba(1,16,27,0.6) 100%, rgba(0,36,61,0.6) 100%),image-url('gym.jpg');
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  height: 300px !important;
+  padding-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#gym-banner-large h1 {
+  color: #ffffff;
+  font-family: "Lato", "sans-serif";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+  padding-top: 125px;
+  position: relative;
+  top: -10px;
+  top: -23px;
+  align-items: center;
+}
+
+#gym-banner-large h2 {
+  color: #ffffff;
+  font-family: "Lato", "sans-serif";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  top: 0px;
+}
+
+#gym-banner-large h3 {
+ color: #ffffff;
+ font-family: "Lato", "sans-serif";
+ font-size: 18px;
+ font-weight: 200;
+ font-style: normal;
+ line-height: normal;
+ position: relative;
+ text-align: center;
+ padding-top: 44px;
+ top: -15px;
+}
+
+
 #gym-banner-description-mobile h1{
   color: #ffffff;
   font-family: $main-font;
