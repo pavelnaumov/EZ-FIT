@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.4.4'
+ruby '2.6.1'
 
 gem 'bootsnap', require: false
 gem 'devise'
@@ -17,7 +17,8 @@ gem 'omniauth-facebook'
 gem 'administrate'
 
 gem 'autoprefixer-rails'
-gem 'bootstrap-sass', '~> 3.3'
+gem 'bootstrap', '~> 4.2.1'
+gem 'jquery-rails', '4.3.1'
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'sass-rails'
 gem 'simple_form'

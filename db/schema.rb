@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_26_174635) do
+ActiveRecord::Schema.define(version: 2019_06_10_134956) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 2018_07_26_174635) do
     t.string "photo"
     t.float "latitude"
     t.float "longitude"
+    t.string "segment"
   end
 
   create_table "orders", force: :cascade do |t|
@@ -69,6 +70,8 @@ ActiveRecord::Schema.define(version: 2018_07_26_174635) do
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
+    t.string "first_name", default: "", null: false
+    t.string "last_name", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -79,8 +82,6 @@ ActiveRecord::Schema.define(version: 2018_07_26_174635) do
     t.inet "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "first_name"
-    t.string "last_name"
     t.string "provider"
     t.string "uid"
     t.index ["email"], name: "index_users_on_email", unique: true

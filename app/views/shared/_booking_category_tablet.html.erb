@@ -1,38 +1,60 @@
-<div class="category-card-container-tablet">
-<% @categories.each do |category| %>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-offset-12 centered">
-  <div class="category-card-tablet">
-    <div class="category-card-title">
-      <div id="category-card-title-line">
-        <div id="category-card-name">
-          <p> <%= category.name %></p>
+<div class="card-deck">
+  <div class="container">
+    <div class="row">
+        <div class="card card-pricing border-0 text-center hover-scale-110 shadow-lg bg-primary popular">
+          <div class="card-header py-0 border-0">
+            <span class="h6 d-inline-block mx-auto px-4 py-1 rounded-bottom shadow-sm bg-white">Multiple</span>
+            <div class="py-5">
+              <h1 class="display-4 mb-0 text-white" data-pricing-value="15">$<span class="price">6</span><span class="h6 text-white ml-2">/ per month</span></h1>
+            </div>
+          </div>
+          <hr class="divider divider-fade divider-dark my-0" />
+          <div class="card-body">
+            <ul class="list-unstyled text-white mb-4">
+              <li>Up to 5 users</li>
+              <li>Basic support on Github</li>
+              <li>Monthly updates</li>
+              <li>Free cancelation</li>
+            </ul>
+            <button type="button" class="btn btn-sm btn-neutral mb-3">Order now</button>
+          </div>
+        </div>
+        <div class="card card-pricing border-0 text-center hover-scale-110 shadow-lg bg-primary popular">
+          <div class="card-header py-0 border-0">
+            <span class="h6 d-inline-block mx-auto px-4 py-1 rounded-bottom shadow-sm bg-white">Multiple</span>
+            <div class="py-5">
+              <h1 class="display-4 mb-0 text-white" data-pricing-value="15">$<span class="price">6</span><span class="h6 text-white ml-2">/ per month</span></h1>
+            </div>
+          </div>
+          <hr class="divider divider-fade divider-dark my-0" />
+          <div class="card-body">
+            <ul class="list-unstyled text-white mb-4">
+              <li>Up to 5 users</li>
+              <li>Basic support on Github</li>
+              <li>Monthly updates</li>
+              <li>Free cancelation</li>
+            </ul>
+            <button type="button" class="btn btn-sm btn-neutral mb-3">Order now</button>
+          </div>
+        </div>
+        <div class="card card-pricing border-0 text-center hover-scale-110 shadow-lg bg-primary popular">
+          <div class="card-header py-0 border-0">
+            <span class="h6 d-inline-block mx-auto px-4 py-1 rounded-bottom shadow-sm bg-white">Multiple</span>
+            <div class="py-5">
+              <h1 class="display-4 mb-0 text-white" data-pricing-value="15">$<span class="price">6</span><span class="h6 text-white ml-2">/ per month</span></h1>
+            </div>
+          </div>
+          <hr class="divider divider-fade divider-dark my-0" />
+          <div class="card-body">
+            <ul class="list-unstyled text-white mb-4">
+              <li>Up to 5 users</li>
+              <li>Basic support on Github</li>
+              <li>Monthly updates</li>
+              <li>Free cancelation</li>
+            </ul>
+            <button type="button" class="btn btn-sm btn-neutral mb-3">Order now</button>
+          </div>
         </div>
       </div>
-      <p> <%= category.number_of_visits %></p>
-      <p>Access to all facilities</p>
-      <% if category.name != "Unlimited One Month Pass" %>
-      <p>Valid for 30 days</p>
-      <% else %>
-      <p> Valid for 60 days</p>
-      <% end %>
-
-      <div id="category-card-price">
-        <h2><%= humanized_money(category.price) %> Eur</h2>
-      </div>
-      <div class="category-card-footer">
-        <div id="category-card-footer-line">
-        </div>
-      </div>
-       <%= link_to gym_category_path(@gym, category.id) do %>
-       <div class="button-buy-tablet">
-         <div id="button-text">
-           <h2 class="text-center">Purchase</h2>
-         </div>
-       </div>
     </div>
   </div>
-</div>
-<% end %>
-<% end %>
-</div>
-

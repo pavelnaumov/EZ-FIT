@@ -4,7 +4,6 @@
 @import "config/bootstrap_variables";
 
 // External libraries
-@import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
@@ -13,4 +12,8 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+// Purpose 
+@import "purpose/purpose.scss";
+@import "purpose/jquery.fancybox.min.css";
 @import "components/card";
