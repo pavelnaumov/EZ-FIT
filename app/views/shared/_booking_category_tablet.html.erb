@@ -1,60 +1,28 @@
-<div class="card-deck">
+<div class="card-deck" style="margin-top: 50px;">
   <div class="container">
     <div class="row">
+    <% @categories.each do |category| %>
         <div class="card card-pricing border-0 text-center hover-scale-110 shadow-lg bg-primary popular">
           <div class="card-header py-0 border-0">
-            <span class="h6 d-inline-block mx-auto px-4 py-1 rounded-bottom shadow-sm bg-white">Multiple</span>
+            <span class="h6 d-inline-block mx-auto px-4 py-1 rounded-bottom shadow-sm bg-white"><%= category.name %></span>
             <div class="py-5">
-              <h1 class="display-4 mb-0 text-white" data-pricing-value="15">$<span class="price">6</span><span class="h6 text-white ml-2">/ per month</span></h1>
+              <h1 class="display-4 mb-0 text-white" data-pricing-value="15">€<span class="price"><%= category.price_cents/100 %></span><span class="h6 text-white ml-2">/ per month</span></h1>
             </div>
           </div>
           <hr class="divider divider-fade divider-dark my-0" />
           <div class="card-body">
             <ul class="list-unstyled text-white mb-4">
-              <li>Up to 5 users</li>
+              <li><%= category.number_of_visits %></li>
               <li>Basic support on Github</li>
               <li>Monthly updates</li>
               <li>Free cancelation</li>
             </ul>
-            <button type="button" class="btn btn-sm btn-neutral mb-3">Order now</button>
+            <%= link_to gym_category_path(@gym, category.id) do %>
+            <button type="button" class="btn btn-sm btn-primary mb-3">Order now</button>
+            <% end %>
           </div>
         </div>
-        <div class="card card-pricing border-0 text-center hover-scale-110 shadow-lg bg-primary popular">
-          <div class="card-header py-0 border-0">
-            <span class="h6 d-inline-block mx-auto px-4 py-1 rounded-bottom shadow-sm bg-white">Multiple</span>
-            <div class="py-5">
-              <h1 class="display-4 mb-0 text-white" data-pricing-value="15">$<span class="price">6</span><span class="h6 text-white ml-2">/ per month</span></h1>
-            </div>
-          </div>
-          <hr class="divider divider-fade divider-dark my-0" />
-          <div class="card-body">
-            <ul class="list-unstyled text-white mb-4">
-              <li>Up to 5 users</li>
-              <li>Basic support on Github</li>
-              <li>Monthly updates</li>
-              <li>Free cancelation</li>
-            </ul>
-            <button type="button" class="btn btn-sm btn-neutral mb-3">Order now</button>
-          </div>
-        </div>
-        <div class="card card-pricing border-0 text-center hover-scale-110 shadow-lg bg-primary popular">
-          <div class="card-header py-0 border-0">
-            <span class="h6 d-inline-block mx-auto px-4 py-1 rounded-bottom shadow-sm bg-white">Multiple</span>
-            <div class="py-5">
-              <h1 class="display-4 mb-0 text-white" data-pricing-value="15">$<span class="price">6</span><span class="h6 text-white ml-2">/ per month</span></h1>
-            </div>
-          </div>
-          <hr class="divider divider-fade divider-dark my-0" />
-          <div class="card-body">
-            <ul class="list-unstyled text-white mb-4">
-              <li>Up to 5 users</li>
-              <li>Basic support on Github</li>
-              <li>Monthly updates</li>
-              <li>Free cancelation</li>
-            </ul>
-            <button type="button" class="btn btn-sm btn-neutral mb-3">Order now</button>
-          </div>
-        </div>
+        <% end %>
       </div>
     </div>
   </div>

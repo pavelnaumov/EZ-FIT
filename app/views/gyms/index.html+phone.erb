@@ -1,14 +1,48 @@
-<%= render 'shared/search_mobile' %>
-<div class="wrapper-mobile">
-  <div class="cards-container-mobile">
-   <%#= render 'shared/search_mobile' %>
-   <%= render @gyms%>
-   <div class="map-container-mobile">
-    <%= render 'map' %>
+<%= render 'shared/search_bar' %>
+<div class="container">
+  <div class="card-container">
+    <div class="row">
+      <% @gyms.each do |gym| %>
+        <div class="card card-product">
+          <div class="card-image">
+            <a href="#">
+              <%= link_to gym do %>
+                <img alt="Image placeholder" src="<%= gym.photo %>" class="img-center img-fluid">
+              <% end %>
+            </a>
+          </div>
+          <div class="card-body text-center pt-0">
+            <h6><a href="/gyms/<%= gym.id %>"><%= gym.name %></a></h6>
+            <p class="text-sm">
+              <%= gym.address %>
+            </p>
+            <% if gym.segment == 'Basic' %>
+            <span class="card-price">Starting from: €7</span>
+            <% elsif gym.segment == 'Standard' %>
+            <span class="card-price">Starting from: €10</span>
+            <% elsif gym.segment == 'Standard-Premium' %>
+            <span class="card-price">Starting from: €12</span>
+            <% elsif gym.segment == 'Premium' %>
+            <span class="card-price">Starting from: €15</span>
+            <% end %>
+            <div class="product-colors mt-3">
+              <a href="#" style="background-color: #59ad46;" data-toggle="tooltip" data-original-title="Swimming Pool"></a>
+              <a href="#" style="background-color: #04050a;" data-toggle="tooltip" data-original-title="Weights"></a>
+              <a href="#" style="background-color: #62aedd;" data-toggle="tooltip" data-original-title="Spa"></a>
+              <a href="#" style="background-color: #e84385;" data-toggle="tooltip" data-original-title="Cross-Fit"></a>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
-
 <script>
   const map = document.getElementById('map');
-  const mapContainer = document.getElementById('map-container-mobile');
+  const mapContainer = document.getElementById('map-container');
 </script>
+<!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+<%= javascript_include_tag('purpose.core.js') %>
+<!-- Purpose JS -->
+<%= javascript_include_tag('purpose.js') %>
+<%= stylesheet_link_tag('purpose/jquery.fancybox.min') %>

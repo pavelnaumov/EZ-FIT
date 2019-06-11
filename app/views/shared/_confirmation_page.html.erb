@@ -1,20 +1,11 @@
-  <div class="confirmation-box">
-    <div class="confirmation-box-thanks">
-      <h1><%= current_user.first_name %>, thank you for your order</h1>
-      <p>We'll follow up with email containing your secret code</p>
-      <p>You can also find your pass in <strong> My Passes </strong> section</p>
-      <h5>Order number: <strong><%= @order.id %></strong></h5>
-      <h6>Order date: <strong><%= @order.created_at %></strong></h6>
-      <%= link_to passes_path do %>
-      <div class="button-my-passes">
-        <div id="button-text-summary">
-          <h2>My Passes</h2>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="container" style="margin-top: 150px;">
+<div class="jumbotron" style="background-color: #E8ECEF;">
+  <h1 class="display-4"><%= current_user.first_name %>, thank you for your order</h1>
+  <p class="lead">We'll follow up with an email containing your secret code</p>
+  <hr class="my-4">
+   <p class="lead">You can also find your pass in <strong> My Passes </strong> section.</p>
+ <h6>Order number: <strong><%= @order.id %></strong></h6>
+      <h6>Order date: <strong><%= @order.created_at.localtime %></strong></h6>
+      <%= link_to 'My Passes', passes_path, class: 'btn btn-success' %>
 </div>
 </div>
-</div>
-<% end %>
-

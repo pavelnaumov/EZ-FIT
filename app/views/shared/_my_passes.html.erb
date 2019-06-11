@@ -1,18 +1,34 @@
-<% @orders.each do |order| %>
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-  <div class="pass-card">
-    <div class="pass-card-photo" style="background: url('<%= order.gym_photo %>')">
-      <div class="pass-card-title">
-        <% if order.category_name != "Unlimited One Month Pass" %>
-        <h2 class="pass-name text-center"> <%= order.category_name %></h2>>
-        <% else %>
-        <h3 class="pass-name text-center"> <%= order.category_name %></h3>
-        <% end %>
-      </div>
-      <div class="pass-card-footer">
-        <p class="gym-name text-center"><%= order.gym_name %></p>
-      </div>
+<div class="container">
+  <div class="card-container">
+    <div class="row">
+      <% @orders.each do |order| %>
+        <div class="card card-product">
+          <div class="card-image">
+                <img alt="Image placeholder" src="<%= order.gym_photo %>" class="img-center img-fluid">
+          </div>
+          <div class="card-body text-center pt-0">
+            <h6><%= order.gym_name %></h6>
+            <p class="text-sm">
+              <%= order.category_name %>
+            </p>
+            <p class="text-sm">
+              Price paid: €<%= order.amount_cents/100 %>
+            </p>
+            <div class="product-colors mt-3">
+              <a href="#" style="background-color: #59ad46;" data-toggle="tooltip" data-original-title="Swimming Pool"></a>
+              <a href="#" style="background-color: #04050a;" data-toggle="tooltip" data-original-title="Weights"></a>
+              <a href="#" style="background-color: #62aedd;" data-toggle="tooltip" data-original-title="Spa"></a>
+              <a href="#" style="background-color: #e84385;" data-toggle="tooltip" data-original-title="Cross-Fit"></a>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
-<% end %>
+
+<!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+<%= javascript_include_tag('purpose.core.js') %>
+<!-- Purpose JS -->
+<%= javascript_include_tag('purpose.js') %>
+<%= stylesheet_link_tag('purpose/jquery.fancybox.min') %>

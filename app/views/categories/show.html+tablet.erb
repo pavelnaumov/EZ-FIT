@@ -1,41 +1,11 @@
-<div class="order-review-container-tablet">
-  <div class="col-lg-offset-4 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div class="row">
-      <div class="review-box-tablet">
-        <div id="review-box-header-tablet"><h1> Review and Pay</h1></div>
-        <div class="order-category-name-tablet">
-         <% if @category.name != "Unlimited One Month Pass" %>
-         <div id="order-category-name-short-tablet">
-          <h3><%= @category.name %></h3>
-        </div>
-        <% else %>
-        <div id="order-category-name-long-tablet">
-          <h3><%= @category.name %></h3>
-        </div>
-        <% end %>
-        <div id="order-category-validity-tablet">
-          <% if @category.name != "Unlimited One Month Pass" %>
-          <h3>The following pass would be valid for 30 days</h3>
-          <% else %>
-          <h3>The following pass would be valid for 60 days</h3>
-          <% end %>
-        </div>
-        <div id="gym-name-tablet">
-          <h2><%= @gym.name %></h2>
-        </div>
-        <div id="review-card-footer-line-tablet">
-        </div>
-        <div id="order-total-tablet">
-          <h2>Total:</h2>
-          <h3><%=humanized_money_with_symbol(@category.price) %></h3>
-        </div>
-        <div class="payment-button-tablet">
-          <%= render 'shared/payment_tablet' %>      
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="container" style="margin-top: 150px;">
+<div class="jumbotron" style="background-color: #E8ECEF;">
+  <h1 class="display-4"><%= @category.name %></h1>
+  <p class="lead"><%= @gym.name %></p>
+  <hr class="my-4">
+  <h6><%=humanized_money_with_symbol(@category.price) %></h6>
+  <p class="lead">
+     <%= render 'shared/payment_tablet' %>    
+  </p>
 </div>
 </div>
-</div>
-

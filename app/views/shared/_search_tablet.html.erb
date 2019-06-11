@@ -1,13 +1,26 @@
-<div class="search-gyms-wrapper-tablet">
-  <div class="search-gyms-tablet">
-    <%= form_tag gyms_path, method: :get do %>
-    <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-      placeholder: "Find a gym" %>
-      <%= submit_tag "Find", class: "search-button-tablet" %>
-      <% end %>
+<div class="container pt-5 pt-lg-9 pb-lg-7">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <%= form_tag gyms_path, method: :get do %>
+              <form>
+                <div class="form-group bg-white rounded-pill px-2 py-2 shadow">
+                  <div class="row">
+                    <div class="col-8 col-md-9">
+                      <div class="input-group input-group-merge shadow-none" >
+                        <div class="input-group-prepend">
+                          <span class="input-group-text bg-transparent border-0" style="color: black;"><i class="fas fa-search"></i></span>
+                        </div>
+                        <%= text_field_tag  :query, params[:query], class: 'form-control form-control-flush shadow-none', placeholder: "Find a gym", style: 'color: black' %>
+                      </div>
+                    </div>
+                    <div class="col-4 col-md-3">
+                      <%= submit_tag "Find", name: nil, class: 'btn btn-block btn-success rounded-pill' %>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          <% end %>
+        </div>
+      </div>
     </div>
-  </div>
-
-

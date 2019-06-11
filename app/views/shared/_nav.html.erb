@@ -1,0 +1,61 @@
+<% if user_signed_in? %>
+  <nav class="navbar navbar-horizontal navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <%= link_to gyms_path, class: 'btn btn-success btn-icon' do %>
+        <%= image_tag "logo_3.png", height: 80 %>
+      <% end %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-success" aria-controls="navbar-success" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-success">
+        <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item">
+              <%= link_to "My Passes", "/passes", class: 'nav-link nav-link-icon' do %>
+                <i class="fas fa-star"></i>
+                <%= t(".profile", default: "My Passes") %>
+              <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to destroy_user_session_path, method: :delete, class: 'nav-link nav-link-icon' do %>
+              <i class="fas fa-sign-out-alt"></i>
+              <%= t(".sign_out", default: "Sign Out") %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<% end %>
+
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <%= link_to gyms_path, class: "navbar-wagon-brand" do %>
+    <%= image_tag "logo_3.png", height: 80 %>
+  <% end %>
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <% if user_signed_in? %>
+      <!-- Links when logged in -->
+      <%= link_to "My Passes", "/passes", class: "navbar-wagon-item navbar-wagon-link" %>
+      <!-- Avatar with dropdown menu -->
+      <div class="navbar-wagon-item">
+        <div class="dropdown">
+          <%= image_tag "http://kitt.lewagon.com/placeholder/users/pavelnaumov", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li>
+              <%= link_to edit_user_registration_path do %>
+                <i class="fa fa-user"></i> <%= t(".profile", default: "Edit Profile") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <!-- Dropdown list appearing on mobile only -->
+</div>
