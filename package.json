@@ -6,7 +6,7 @@
     "bootstrap": "^3.3.7",
     "gmaps": "^0.4.24",
     "hoek": "^5.0.3",
-    "jquery": "^3.3.1"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
